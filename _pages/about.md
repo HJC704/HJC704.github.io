@@ -50,16 +50,11 @@ My research interests lie at machine learning, computer vision and their applica
 
 ---
 
-##  Papers
+## Papers
 
-1. **AVA-Bench: Atomic Visual Ability Benchmark for Vision Foundation Models** 
+1. **AVA-Bench: Atomic Visual Ability Benchmark for Vision Foundation Models**
    [arXiv] [PDF]
-
 
 ---
 
-##  News
-
-
-
-
+## News

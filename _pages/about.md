@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: lateset update: Aeptember, 2025
+# subtitle: lateset update: Aeptember, 2025
 
 profile:
   align: center

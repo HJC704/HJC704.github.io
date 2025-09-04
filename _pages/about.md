@@ -30,11 +30,10 @@ selected_papers: true
 social: true
 announcements:
   enabled: true
-  scrollable: false     # 看 news 是一列，不滑动
-  limit: 3              # 只显示最近 3 条 news
+  scrollable: false # 看 news 是一列，不滑动
+  limit: 3 # 只显示最近 3 条 news
 latest_posts:
-  enabled: false        # 没看到博客板块
-
+  enabled: false # 没看到博客板块
 ---
 
 # Jiacheng Hou

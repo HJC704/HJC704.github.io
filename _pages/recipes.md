@@ -2,7 +2,6 @@
 layout: page
 permalink: /recipes/
 title: recipes
-description: I really love cooking, almost the same as doing research. These dishes are the comforts that keep a child from China connected to home.
 nav: true
 nav_order: 6
 ---
@@ -10,10 +9,25 @@ nav_order: 6
 <div class="recipes-page">
   <div class="recipes-page__intro">
     <p>
-      From slow braises to quick campus-friendly snacks, this is a living notebook of dishes that carry memories,
+      I really enjoy cooking, very much the same as doing research. It's not only because my favourate recipes represents my research philosophy:
+    </p>
+
+  <div class="pull-quote">
+    <q>“高端的食材，往往只需要最朴素的烹饪方式。”</q><br>
+    <q>"The finest ingredients often require only the simplest cooking methods."</q>
+    <span class="cite">— A Bite of China <span class="work">Season 1 (2012), narration</span></span>
+  </div>
+    
+  <p>
+      but they also comfort a child from Hunan, China when he misses his hometown.
+  </p>
+
+    <p>
+      I like seafood the best, so the recipes includ lots of seafood dishes that carry memories,
       rituals, and small experiments from my kitchen. I revisit and refine them often—feel free to explore,
       remix, and make them your own.
     </p>
+
   </div>
 
   <div class="recipes-page__list">

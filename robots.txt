@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://HJC704.github.io/sitemap.xml
+Sitemap: https://HJC704.github.io//sitemap.xml

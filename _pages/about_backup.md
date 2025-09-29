@@ -6,8 +6,8 @@ permalink: /
 
 profile:
   align: center
-  image: jiacheng.jpg
-  image_circular: false
+  image: prof_pic.jpg
+  image_circular: true
   # more_info: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
@@ -45,7 +45,7 @@ Hi, I’m Jiacheng Hou (侯佳成), a 2nd-year undergraduate student at OSU CSE,
 
 <!-- I received my B.Eng. in Computer Science from **Shanghai Jiao Tong University (ACM class)**. From summer to winter 2024, I was a visiting student at **Cornell University**, where I was fortunately advised by **Prof. Kevin Ellis** on the **Abstraction and Reasoning Corpus (ARC)** problem. During my junior year, I did undergraduate research under **Prof. Wei-Long Zheng** in the BCMI laboratory, SJTU. -->
 
-My research interests lie at 3D computer vision, robust perception for autonomous driving, vision and language, and AI for science.
+My research interests lie at machine learning, computer vision and their application to 3D foundation models, autonomous driving, generative modeling and multi-modal models.
 
 ---
 

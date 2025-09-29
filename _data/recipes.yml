@@ -1,0 +1,32 @@
+- name: "Kung Pao Chicken"
+  description: "Classic Sichuan dish with a perfect balance of sweet, sour, and spicy"
+  image: "kung_pao_chicken.jpg"
+  difficulty: "Medium"
+  time: "30 mins"
+  ingredients:
+    - "Chicken breast"
+    - "Peanuts"
+    - "Dried chilies"
+    - "Sichuan peppercorns"
+
+- name: "Mapo Tofu"
+  description: "Traditional Sichuan tofu dish with minced meat in spicy sauce"
+  image: "mapo_tofu.jpg"
+  difficulty: "Easy"
+  time: "20 mins"
+  ingredients:
+    - "Silken tofu"
+    - "Ground pork"
+    - "Doubanjiang"
+    - "Scallions"
+
+- name: "Xiaolongbao"
+  description: "Shanghai soup dumplings with rich broth inside"
+  image: "xiaolongbao.jpg"
+  difficulty: "Hard"
+  time: "2 hours"
+  ingredients:
+    - "All-purpose flour"
+    - "Pork shoulder"
+    - "Gelatin stock"
+    - "Ginger"

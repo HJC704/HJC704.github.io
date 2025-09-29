@@ -1,37 +1,52 @@
 <!-- filepath: /users/PAS2119/hou/HJC704.github.io/_includes/recipes.liquid -->
-<div class="recipes">
-  <h2><a href="{{ '/recipes/' | relative_url }}" style="color: inherit">Recipes</a></h2>
-  <p>When I'm not diving into research, I love exploring Chinese cuisine in the kitchen!</p>
+<div class="recipes-preview">
+  <div class="recipes-preview__header">
+    <h2 class="recipes-preview__title">
+      <a href="{{ '/recipes/' | relative_url }}">Recipes</a>
+    </h2>
+    <p class="recipes-preview__description">
+      Comfort food, late-night experiments, and the flavors that keep me anchored no matter where research takes me.
+    </p>
+  </div>
 
-  <div class="row">
+  <div class="recipes-preview__grid">
     {% for recipe in site.data.recipes limit: 3 %}
-      <div class="col-sm-6 col-md-4 mb-3">
-        <div class="card h-100">
+      <article class="recipe-card recipe-card--compact">
+        <div class="recipe-card__media{% unless recipe.image %} recipe-card__media--placeholder{% endunless %}">
           {% if recipe.image %}
             <img
               src="{{ '/assets/img/recipes/' | append: recipe.image | relative_url }}"
-              class="card-img-top"
               alt="{{ recipe.name }}"
-              style="height: 200px; object-fit: cover;"
+              loading="lazy"
             >
+          {% else %}
+            <span class="recipe-card__placeholder-icon"><i class="fa-solid fa-utensils"></i></span>
           {% endif %}
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">{{ recipe.name }}</h5>
-            <p class="card-text">{{ recipe.description }}</p>
-            <div class="mt-auto">
-              <small class="text-muted">
-                <i class="fas fa-clock"></i> {{ recipe.time }} | <i class="fas fa-signal"></i> {{ recipe.difficulty }}
-              </small>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <div class="recipe-card__content">
+          {% if recipe.cuisine %}
+            <div class="recipe-card__meta">
+              <span class="recipe-card__chip">{{ recipe.cuisine }}</span>
+            </div>
+          {% endif %}
+
+          <h3 class="recipe-card__title">{{ recipe.name }}</h3>
+          {% if recipe.name_en %}
+            <p class="recipe-card__subtitle">{{ recipe.name_en }}</p>
+          {% endif %}
+
+          <p class="recipe-card__description recipe-card__description--compact">
+            {{ recipe.description | strip_html | strip | truncate: 135 }}
+          </p>
+        </div>
+      </article>
     {% endfor %}
   </div>
 
   {% if site.data.recipes.size > 3 %}
-    <div class="text-center mt-3">
-      <a href="{{ '/recipes/' | relative_url }}" class="btn btn-outline-primary">View All Recipes</a>
+    <div class="recipes-preview__cta">
+      <a href="{{ '/recipes/' | relative_url }}" class="btn btn-outline-primary">View all recipes</a>
     </div>
   {% endif %}
 </div>

@@ -9,21 +9,20 @@ nav_order: 6
 <div class="recipes-page">
   <div class="recipes-page__intro">
     <p>
-      I really enjoy cooking, very much the same as doing research. It's not only because my favourate recipes represents my research philosophy:
+      I really enjoy cooking, very much the same as doing research, because my favorite recipes represent my research philosophy:
     </p>
 
-  <div class="pull-quote">
-    <q>“高端的食材，往往只需要最朴素的烹饪方式。”</q><br>
-    <q>"The finest ingredients often require only the simplest cooking methods."</q>
-    <span class="cite">— A Bite of China <span class="work">Season 1 (2012), narration</span></span>
-  </div>
-    
-  <p>
-      but they also comfort a child from Hunan, China when he misses his hometown.
-  </p>
+    <div class="pull-quote">
+      <p class="pull-quote__line">"The fresh ingredients often require only the simplest cooking methods."</p>
+      <span class="pull-quote__cite">— <span class="pull-quote__cite-source">A Bite of China</span> <span class="pull-quote__cite-work">Season 1 (2012), narration</span></span>
+    </div>
 
     <p>
-      I like seafood the best, so the recipes includ lots of seafood dishes that carry memories,
+      The recipes also comfort a child from Hunan, China when he misses his hometown.
+    </p>
+
+    <p>
+      I like seafood the best, so the recipes include seafood that carry memories,
       rituals, and small experiments from my kitchen. I revisit and refine them often—feel free to explore,
       remix, and make them your own.
     </p>

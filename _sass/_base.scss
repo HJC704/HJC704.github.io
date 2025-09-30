@@ -880,6 +880,152 @@ footer.sticky-bottom {
   }
 }
 
+/* Section headings */
+
+.post article > h2,
+.recipes-preview__title {
+  font-size: clamp(1.65rem, 1.3rem + 0.8vw, 1.9rem);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-top: 2.75rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.post article > h2:first-child {
+  margin-top: 1rem;
+}
+
+.post article > h2 a,
+.recipes-preview__title a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.post article > h2 a:hover,
+.recipes-preview__title a:hover {
+  color: var(--global-theme-color);
+}
+
+/* Recipes preview */
+
+.recipes-preview {
+  margin-top: 2.5rem;
+}
+
+.recipes-preview__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.recipes-preview__description {
+  max-width: 540px;
+  font-size: 1rem;
+  color: var(--global-text-color-light);
+  margin: 0;
+}
+
+.recipes-preview__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.recipe-card--compact {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: var(--global-card-bg-color);
+  border-radius: 1rem;
+  box-shadow: 0 12px 30px -20px rgba(0, 0, 0, 0.45);
+}
+
+.recipe-card--compact .recipe-card__media {
+  flex: 0 0 120px;
+  height: 120px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.recipe-card--compact .recipe-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe-card--compact .recipe-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.recipe-card__description--compact {
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+}
+
+.recipes-preview__cta {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .recipe-card--compact {
+    flex-direction: column;
+  }
+
+  .recipe-card--compact .recipe-card__media {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* Pull quote styling */
+
+.pull-quote {
+  margin: 2.5rem 0;
+  padding: 1.75rem 2rem;
+  border-left: 4px solid var(--global-theme-color);
+  border-radius: 1.1rem;
+  background: var(--global-card-bg-color);
+  box-shadow: 0 18px 45px -30px rgba(0, 0, 0, 0.55);
+}
+
+.pull-quote__line {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.pull-quote__line + .pull-quote__line {
+  margin-top: 0.75rem;
+}
+
+.pull-quote__line--highlight {
+  color: var(--global-theme-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.0125em;
+}
+
+.pull-quote__cite {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+}
+
+.pull-quote__cite-source {
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+
+.pull-quote__cite-work {
+  font-style: italic;
+  color: inherit;
+}
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;

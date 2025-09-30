@@ -80,6 +80,16 @@ layout: default
       </div>
     {% endif %}
 
+    {% if page.visitor_globe %}
+      <div class="visitor-globe mt-5">
+        <script
+          type="text/javascript"
+          id="mmvst_globe"
+          src="https://mapmyvisitors.com/globe.js?d=ntw64UGtzUJdpZJOfyjizYIgY2SmaBHbXvHiqw3nf-M"
+        ></script>
+      </div>
+    {% endif %}
+
     {% if site.newsletter.enabled and site.footer_fixed %}
       {% include scripts/newsletter.liquid center=true %}
     {% endif %}

@@ -18,13 +18,7 @@ nav_order: 6
     </div>
 
     <p>
-      The recipes also comfort a child from Hunan, China when he misses his hometown.
-    </p>
-
-    <p>
-      I like seafood the best, so the recipes include seafood that carry memories,
-      rituals, and small experiments from my kitchen. I revisit and refine them often—feel free to explore,
-      remix, and make them your own.
+      The recipes greatly comfort a child from Hunan, China when he misses his hometown.
     </p>
 
   </div>

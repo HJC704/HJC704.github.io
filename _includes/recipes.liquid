@@ -4,18 +4,16 @@
     <h2 class="recipes-preview__title">
       <a href="{{ '/recipes/' | relative_url }}">Recipes</a>
     </h2>
-    <p>
-      I really enjoy cooking, very much the same as doing research. It's not only because my favourate recipes represents my philosophy in doing
-      research:
-    </p>
+    <p>I really enjoy cooking, very much the same as doing research, because my favorite recipes represent my research philosophy:</p>
 
     <div class="pull-quote">
-      <q>“高端的食材，往往只需要最朴素的烹饪方式。”</q><br>
-      <q>"The finest ingredients often require only the simplest cooking methods."</q>
-      <span class="cite">— A Bite of China <span class="work">Season 1 (2012), narration</span></span>
+      <p class="pull-quote__line">"The fresh ingredients often require only the simplest cooking methods."</p>
+      <span class="pull-quote__cite"
+        >— <span class="pull-quote__cite-source">A Bite of China</span> <span class="pull-quote__cite-work">Season 1 (2012), narration</span></span
+      >
     </div>
 
-    <p>but also they comfort a child from Hunan, China when he misses his hometown.</p>
+    <p>The recipes greatly comfort a child from Hunan, China when he misses his hometown.</p>
   </div>
 
   <div class="recipes-preview__grid">
@@ -45,8 +43,8 @@
             <p class="recipe-card__subtitle">{{ recipe.name_en }}</p>
           {% endif %}
 
-          <p class="recipe-card__description recipe-card__description--compact">
-            {{ recipe.description | strip_html | strip | truncate: 135 }}
+          <p class="recipe-card__description">
+            {{ recipe.description }}
           </p>
         </div>
       </article>

@@ -1,0 +1,59 @@
+{% assign project = site.data.featured_project %}
+{% if project and project.enabled != false %}
+  <section class="home-project-section">
+    <h2 class="home-project-section__title">Project</h2>
+
+    <div class="home-featured-project">
+      {% if project.image %}
+        <div class="home-featured-project__media">
+          {% assign image_alt = project.image_alt | default: project.title %}
+          {% include figure.liquid path=project.image loading="lazy" class="home-featured-project__image" alt=image_alt %}
+        </div>
+      {% endif %}
+
+      <div class="home-featured-project__content">
+        {% if project.title %}
+          <h3 class="home-featured-project__name">{{ project.title }}</h3>
+        {% endif %}
+
+        {% if project.subtitle or project.highlight_name %}
+          <p class="home-featured-project__subtitle">
+            {% if project.highlight_name -%}
+              <strong>{{ project.highlight_name }}</strong>
+            {%- endif %}
+            {% if project.subtitle -%}
+              {%- if project.highlight_name %}, {% endif -%}
+              {{- project.subtitle -}}
+            {%- endif %}
+          </p>
+        {% endif %}
+
+        {% if project.role %}
+          <p class="home-featured-project__role">
+            <em>{{ project.role }}</em>
+          </p>
+        {% endif %}
+
+        {% if project.description %}
+          <p class="home-featured-project__description">{{ project.description }}</p>
+        {% endif %}
+
+        {% if project.links %}
+          <div class="home-featured-project__links">
+            {% for link in project.links %}
+              <a
+                class="home-featured-project__link"
+                href="{{ link.url }}"
+                {% if link.external != false %}
+                  target="_blank" rel="noopener"
+                {% endif %}
+              >
+                [{{ link.label }}]
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+{% endif %}

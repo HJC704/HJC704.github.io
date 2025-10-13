@@ -13,7 +13,20 @@ news: true
 selected_papers: true
 social: true
 recipes: true
-visitor_globe: true
+featured_project:
+  enabled: true
+  heading: "Project"
+  image: buckeye_autodrive_gif.gif
+  image_alt: "Autonomous driving perception visualization"
+  title: "Perception System in SAE AutoDrive Competition II - Year 4"
+  highlight_name: "Jiacheng Hou"
+  highlight_affiliation: "Buckeye Autodrive"
+  role: "As a Core Perception Developer"
+  links:
+    - label: "team site"
+      url: "https://sites.google.com/view/buckeyeautodrive/home"
+    - label: "SAE"
+      url: "https://www.sae.org/attend/student-events/autodrive-challenge-series2"
 ---
 
 Hi, I'm Jiacheng Hou (侯佳成), a 2nd-year undergraduate student at [OSU CSE](https://cse.osu.edu/), advised by Prof. [Wei-lun Chao](https://sites.google.com/view/wei-lun-harry-chao/home).

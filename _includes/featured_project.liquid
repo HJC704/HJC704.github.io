@@ -5,9 +5,40 @@
 
     <div class="home-featured-project">
       {% if project.image %}
+        {% assign image_raw = project.image %}
+        {% assign image_alt = project.image_alt | default: project.title %}
+        {% assign is_external_image = image_raw contains '://' %}
+        {% assign figure_path = image_raw %}
+
+        {% unless is_external_image %}
+          {% if figure_path startswith '/' %}
+            {% assign figure_path = figure_path %}
+          {% elsif figure_path contains '/' %}
+            {% assign figure_path = figure_path %}
+          {% else %}
+            {% assign figure_path = 'assets/img/' | append: figure_path %}
+          {% endif %}
+        {% endunless %}
+
+        {% assign image_ext = figure_path | split: '?' | first | split: '.' | last | downcase %}
+
+        {% if is_external_image %}
+          {% assign image_src = figure_path %}
+        {% else %}
+          {% assign image_src = figure_path | relative_url %}
+        {% endif %}
+
         <div class="home-featured-project__media">
-          {% assign image_alt = project.image_alt | default: project.title %}
-          {% include figure.liquid path=project.image loading="lazy" class="home-featured-project__image" alt=image_alt %}
+          {% if image_ext == 'gif' or is_external_image %}
+            <img
+              src="{{ image_src }}"
+              alt="{{ image_alt }}"
+              loading="lazy"
+              class="home-featured-project__image"
+            >
+          {% else %}
+            {% include figure.liquid path=figure_path loading="lazy" class="home-featured-project__image" alt=image_alt %}
+          {% endif %}
         </div>
       {% endif %}
 

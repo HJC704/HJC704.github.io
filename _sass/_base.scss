@@ -1055,9 +1055,12 @@ footer.sticky-bottom {
 }
 
 .home-featured-project__image {
+  display: block;
   border-radius: 0.75rem;
   overflow: hidden;
   margin: 0;
+  width: 100%;
+  height: auto;
 }
 
 .home-featured-project__image picture,

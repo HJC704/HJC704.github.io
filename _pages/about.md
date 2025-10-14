@@ -16,7 +16,7 @@ recipes: true
 featured_project:
   enabled: true
   heading: "Project"
-  image: buckeye_autodrive_gif.gif
+  image: buckeye_autodrive.gif
   image_alt: "Autonomous driving perception visualization"
   title: "Perception System in SAE AutoDrive Competition II - Year 4"
   highlight_name: "Jiacheng Hou"

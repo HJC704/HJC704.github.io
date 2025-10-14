@@ -5,28 +5,19 @@
 
     <div class="home-featured-project">
       {% if project.image %}
-        {% assign image_raw = project.image %}
+        {% assign image_raw = project.image | strip %}
         {% assign image_alt = project.image_alt | default: project.title %}
         {% assign is_external_image = image_raw contains '://' %}
-        {% assign figure_path = image_raw %}
-
-        {% unless is_external_image %}
-          {% if figure_path startswith '/' %}
-            {% assign figure_path = figure_path %}
-          {% elsif figure_path contains '/' %}
-            {% assign figure_path = figure_path %}
-          {% else %}
-            {% assign figure_path = 'assets/img/' | append: figure_path %}
-          {% endif %}
-        {% endunless %}
-
-        {% assign image_ext = figure_path | split: '?' | first | split: '.' | last | downcase %}
 
         {% if is_external_image %}
-          {% assign image_src = figure_path %}
+          {% assign image_src = image_raw %}
+        {% elsif image_raw contains '/' %}
+          {% assign image_src = image_raw | relative_url %}
         {% else %}
-          {% assign image_src = figure_path | relative_url %}
+          {% assign image_src = 'assets/img/' | append: image_raw | relative_url %}
         {% endif %}
+
+        {% assign image_ext = image_raw | split: '?' | first | split: '.' | last | downcase %}
 
         <div class="home-featured-project__media">
           {% if image_ext == 'gif' or is_external_image %}
@@ -37,7 +28,21 @@
               class="home-featured-project__image"
             >
           {% else %}
-            {% include figure.liquid path=figure_path loading="lazy" class="home-featured-project__image" alt=image_alt %}
+            {% if is_external_image %}
+              <img
+                src="{{ image_src }}"
+                alt="{{ image_alt }}"
+                loading="lazy"
+                class="home-featured-project__image"
+              >
+            {% else %}
+              {% if image_raw contains '/' %}
+                {% assign figure_path = image_raw %}
+              {% else %}
+                {% assign figure_path = 'assets/img/' | append: image_raw %}
+              {% endif %}
+              {% include figure.liquid path=figure_path loading="lazy" class="home-featured-project__image" alt=image_alt %}
+            {% endif %}
           {% endif %}
         </div>
       {% endif %}

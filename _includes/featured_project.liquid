@@ -42,13 +42,13 @@
 
         {% if project.subtitle or project.highlight_name %}
           <p class="home-featured-project__subtitle">
-            {% if project.highlight_name -%}
+            {% if project.highlight_name %}
               <strong>{{ project.highlight_name }}</strong>
-            {%- endif %}
-            {% if project.subtitle -%}
-              {%- if project.highlight_name %}, {% endif -%}
-              {{- project.subtitle -}}
-            {%- endif %}
+            {% endif %}
+            {% if project.subtitle %}
+              {% if project.highlight_name %}, {% endif %}
+              {{ project.subtitle }}
+            {% endif %}
           </p>
         {% endif %}
 

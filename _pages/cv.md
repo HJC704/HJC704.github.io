@@ -1,13 +1,15 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: cv
-nav: false
-nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+title: CV
+nav: true
+nav_order: 4
 ---
+
+<div class="text-center mt-5">
+  <a class="btn btn-primary btn-lg" href="{{ '/assets/pdf/Jiacheng_CV.pdf' | relative_url }}" target="_blank">
+    <i class="fa-solid fa-file-pdf"></i> Download CV
+  </a>
+</div>
 
 <!-- CV content will be added here later -->

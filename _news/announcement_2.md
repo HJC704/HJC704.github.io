@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Research Intern at [MLB](https://github.com/OSU-MLB), advised by Prof. [Wei-Lun Chao](https://sites.google.com/view/wei-lun-harry-chao/home)
+Research Intern at [MLB](https://github.com/OSU-MLB), advised by Prof. [Wei-Lun(Harry) Chao](https://sites.google.com/view/wei-lun-harry-chao/home)
 .

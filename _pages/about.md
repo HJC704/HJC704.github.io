@@ -8,6 +8,20 @@ profile:
   align: right
   image: jiacheng.jpg
   image_circular: false
+  more_info: >
+    <p style="font-size: 16px; color: #333; font-family: sans-serif;">
+      <i class="fas fa-envelope" style="color: #333;"></i> 
+      <a href="mailto:hou.688@osu.edu" style="color: var(--global-theme-color); text-decoration: none; font-family: sans-serif;">hou.688@osu.edu</a>
+    </p>
+    <br>
+    <p style="font-size: 16px; color: #333; font-family: sans-serif;">
+      <i class="fab fa-github" style="color: #333;"></i> 
+      <a href="https://github.com/HJC704" style="color: var(--global-theme-color); text-decoration: none; font-family: sans-serif;">HJC704</a>
+    </p>
+    <p style="font-size: 16px; color: #333; font-family: sans-serif;">
+      <i class="fas fa-graduation-cap" style="color: #333;"></i>
+      <a href="https://scholar.google.com/citations?user=tnatYhQAAAAJ" style="color: var(--global-theme-color); text-decoration: none; font-family: sans-serif;">Google Scholar</a>
+    </p>
 
 news: true
 selected_papers: true
